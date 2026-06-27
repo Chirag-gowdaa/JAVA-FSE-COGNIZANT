@@ -1,0 +1,14 @@
+package com.library.service;
+import com.library.repository.BookRepository;
+
+public class BookService {
+    private BookRepository bookRepository;
+    //setter injection
+    public void setBookRepository(BookRepository bookRepository) {
+        this.bookRepository = bookRepository;
+    }
+    public void showBooks(){
+        System.out.println("Book Service Called");
+        bookRepository.displayBook();
+    }
+}
