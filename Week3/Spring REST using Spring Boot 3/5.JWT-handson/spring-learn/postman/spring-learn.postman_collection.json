@@ -1,0 +1,63 @@
+{
+  "info": {
+    "name": "Spring Learn REST APIs",
+    "description": "Cognizant Week 3 — Hello World & Country endpoints (port 8083)",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:8083"
+    }
+  ],
+  "item": [
+    {
+      "name": "Hello World",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{baseUrl}}/hello"
+      }
+    },
+    {
+      "name": "Get India (XML bean)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{baseUrl}}/country"
+      }
+    },
+    {
+      "name": "Get All Countries",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{baseUrl}}/countries"
+      }
+    },
+    {
+      "name": "Get Country by Code (IN)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{baseUrl}}/country/in"
+      }
+    },
+    {
+      "name": "Get Country by Code (US)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{baseUrl}}/country/US"
+      }
+    },
+    {
+      "name": "Country Not Found (404)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": "{{baseUrl}}/country/az"
+      }
+    }
+  ]
+}
